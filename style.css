@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    font-family: "oswald";
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 3;
+}
+
+nav li{
+        display: inline;
+        padding: 15px;
+}
+
+.menu a{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    color: rgb(167, 167, 167);
+}
+
+.logo{
+    color: white;
+}
+
+.social a{ 
+    padding: 10px;
+}
+
+.social a:hover{
+    color: rgb(167, 167, 167);
+}
+
+
+.accueil{
+    position: relative;    
+}
+
+.accueil img{
+    position: absolute;
+}
+
+
+.banniere img{
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.tonneaux img{
+    z-index: 2;
+}
