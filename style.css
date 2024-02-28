@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 .social a:hover{ 
-    color: rgb(167, 167, 167);
+    fill: rgb(167, 167, 167);
 }
 
 /*---------------BANNER---------------*/
@@ -58,7 +58,7 @@ nav a:hover {
 header{
     position: relative;
     min-height: 100vh;
-    background: url("../img/banniere.jpg");
+    background: url("img/banniere.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -89,16 +89,19 @@ header{
 .container1{
     width: 100vw;  /* définit la largeur de mon conteneur */
     height: 80vh;  /* définit la hauteur de mon conteneur */
-    display:flex;  /* définit la position des éléments du conteneur */
+    display:flex;   /*définit la position des éléments du conteneur */
     flex-direction: row-reverse;  /* définit l'orientation des éléments du conteneur */
-    align-items: center;  /* centre verticalement les éléments du conteneur */
+    align-items: center; /* centre verticalement les éléments du conteneur */
 }
 
 .block-right{
     width: 50%;  /* définit la largeur de mon élément en fonction de la dimension du conteneur */
     height: 100%;
-    background: url("../img/h5-el-holder-img-1-1.jpg") no-repeat;
+    background: url("img/h5-el-holder-img-1-1.jpg") no-repeat;
     background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container2{
@@ -112,16 +115,11 @@ header{
 .block-left{
     width: 50%;
     height: 100%;
-    background: url("../img/h5-el-holder-img-2.jpg") no-repeat;
+    background: url("img/h5-el-holder-img-2.jpg") no-repeat;
     background-size: cover;
-}
-
-
-.img-article{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
 }
 
 
@@ -177,7 +175,7 @@ article a:hover{
 .row .galerie{
     position:relative;
     cursor: pointer;
-    width: 100vh;
+    width: 100vw;
 }
 
 .galerie img{
@@ -227,7 +225,7 @@ article a:hover{
     filter: grayscale(1);
 }
 
-/*---------------GALERIE---------------*/
+/*---------------SERVICES---------------*/
 
 .services-content{
     width: 100%;
@@ -262,7 +260,7 @@ article a:hover{
 /*---------------PARALLAXE---------------*/
 
 .parallaxe{
-    background: center url(../img/h5-parallax-img-2.jpg) fixed;
+    background: center url("img/h5-parallax-img-2.jpg") fixed;
     height: 200px;
 }
 
@@ -284,8 +282,7 @@ article a:hover{
 
 /*---------------FOOTER---------------*/
 
-.map{
-    height: 50vh;    
+.map{  
     width: 100%;
     filter: grayscale(0.9);
     position: relative;
@@ -296,7 +293,7 @@ article a:hover{
     height: 100%;
     width: 100%;
     position: absolute;
-    background: linear-gradient(0deg, #131313 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
     top: 0;
     left: 0;
 }
@@ -310,4 +307,83 @@ article a:hover{
 .logo-footer img{
     width: 80px;
     margin: 40px 0;
+}
+
+/*---------------RESPONSIVE TABLETTE---------------*/
+
+
+@media screen and (max-width: 900px){
+
+.header-content {
+    padding-top: 70px;
+}
+
+.citation{
+    padding: 1em 1em;
+}
+    
+.container1, .container2{
+    height: 100%;
+    flex-direction: column;
+}
+  
+.block-right, .block-left{
+    width: 100%;
+    height: 50%;
+}
+
+.article{
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+.img-article img{
+    height: 300px;
+}
+
+
+.services-content{
+    padding: 40px 0;
+}
+}
+
+/*---------------RESPONSIVE TELEPHONES---------------*/
+
+
+@media screen and (max-width: 650px){
+
+nav{
+    flex-direction: column;
+}
+
+.menu a{
+
+    padding-bottom: 10px;
+}
+
+.header-content img{
+    height: 400px;
+}
+
+.citation{
+    font-family: "oswald";
+    font-size: 20px;
+}
+
+.row{
+    flex-direction: column;
+}
+
+.galerie img{
+    height:50%;
+}
+
+.services-content{
+    flex-direction: column;
+}
+
+.icones>p{
+    padding-bottom: 30px;
+}
 }
