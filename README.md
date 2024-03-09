@@ -1,1 +1,1 @@
-Bienvenue dans le projet Beergarden ! Cet exercice de création de site web utilise HTML et CSS pour construire une page attrayante pour un pub appelé "Beergarden". Cet exercice à pour but de mettre en pratique mes connaissance HTML et CSS basique mais aussi de comprendre les notions de responssive.
+Welcome to the Beergarden project! This website creation exercise utilizes HTML and CSS to build an attractive page for a pub called "Beergarden." The goal of this exercise is to apply my basic HTML and CSS knowledge and also to understand the concepts of responsiveness.
